@@ -1,0 +1,45 @@
+h1{
+    text-align:center;
+    margin-right: 300px;
+
+}
+section{
+    margin-left: 200px;;
+}
+.part1 {
+    display: flex;
+    justify-content:center;
+    width: 80%;
+}
+
+.part1 img{
+    border: 2px solid #000;
+    max-width: 80%;
+    height: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+.part1 p{
+    border: 5px solid #06d6f1; /* First border (inner) */
+    box-shadow: 2px 2px 2px 3px #000000; /* Second border (outer) */
+    max-width: 80%;
+    height: auto;
+    margin: 5px;
+    padding:30px;
+    background-color: beige;
+}
+
+
+.info{
+    margin-left: 400px;
+}
+
+.navbar {
+    text-align: center;
+    font-size: 20px;
+    margin-right: 300px;
+}
+#foot{
+    text-align: center; 
+    margin-right: 300px;
+}
