@@ -1,0 +1,83 @@
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg');
+    background-size: cover;
+    display: flex;
+}
+
+.links {
+    background-color: gray;
+    opacity: 80%;
+    position: relative;
+    width: 660px;
+    height: 260px;
+    margin-top: 890px;
+    margin-left: 1590px;
+    
+}
+
+/* Basic styles for the clock */
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 20px; 
+}
+
+.clock-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* Styles for the clock hands */
+
+
+.hour-hand,.minute-hand {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    /*height: 6px;
+    background: red;*/
+    transform-origin: 50% 0%;
+    transform: rotate(180deg); /* Start at 3:00 PM */
+}
+
+.hour-hand{
+    width: 4px;
+    height:60px;
+    transform:  rotate(30deg);
+    animation: rotatehourhand 10s linear forwards;
+} 
+
+.minute-hand{
+    width: 4px;
+    height: 70px;
+    transform: rotate(360deg);
+    animation: rotateminutehand 10s linear forwards;
+} 
+
+/* Animations */
+@keyframes rotatehourhand {
+    from {
+        transform:  rotate(90deg); 
+    }
+    to {
+        transform: rotate(120deg); 
+    }
+}
+
+@keyframes rotateminutehand {
+    from {
+        transform: rotate(0deg);  
+    }
+    to {
+        transform: rotate(360deg);  
+    }
+}
